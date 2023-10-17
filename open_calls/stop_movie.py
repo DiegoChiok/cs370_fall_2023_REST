@@ -7,5 +7,6 @@ def handle_request():
         return ["Data Flowing"]
 
     g.hb.exec_command(SensorCommand.CommandStopSignal)
+    return ["Data Stopped Flowing"]
     # (Commented Out) return ["Data Flowing"]
-    #must return 
+    # must return a stopped signal -> no data Flowing
